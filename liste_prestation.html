@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="liste_prestation.css">
+  <title>Liste des Marchés</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+              <img src="images\ANDEF-logo.png" alt="Logo">
+        </div>
+        <nav class="nav">
+          <a href="dashboard.html"><button  class="nav_btn" title="page principale">Principale</button></a>
+          <a href="#"><button  class="nav_btn">Documents</button></a>
+      
+          <div class="searchbar">
+            <input type="text" 
+                   placeholder="Search">
+            <div class="searchbtn">
+              <img src="images/icon_recherche.png"
+                    class="icn_srchicn" 
+                    alt="search-icon">
+            </div>
+          </div>
+          <button class="notification-btn">
+            <img src="images/notification.png" alt="Notification">
+          </button> 
+        </nav> 
+      </header>
+      <main>
+  <div id="marche-container">
+    <label for="marcheSelect">Sélectionnez un marché :</label>
+    <input id="marcheSelect" type="number">
+      <!-- Les options de marché seront injectées ici -->
+    <button id="fetchPrestationsButton">Afficher les Prestations</button>
+  </div>
+
+  <div id="marche1">
+    <table>
+      <!-- Les prestations seront affichées ici -->
+    </table>
+  </div>
+</main>
+
+<footer class="footer">
+  &copy; 2024 MarketTrack. All Rights Reserved.
+</footer>
+
+  <script src="liste_prestation.js"></script>
+</body>
+</html>

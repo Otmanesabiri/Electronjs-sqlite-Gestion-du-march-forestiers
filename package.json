@@ -1,0 +1,62 @@
+{
+  "name": "electron-project",
+  "version": "1.0.0",
+  "description": "engre",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "package": "electron-builder",
+    "package-mac": "electron-builder --mac",
+    "package-win": "electron-builder --win",
+    "package-linux": "electron-builder --linux"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^11.1.2",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "sequelize": "^6.37.3",
+    "sequelize-cli": "^6.6.2",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "electron": "^31.3.1",
+    "electron-builder": "^24.13.3",
+    "electron-rebuild": "^3.2.9"
+  },
+  "build": {
+    "appId": "com.yourcompany.MarketTrack",
+    "productName": "MarketTrack",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "main.js",
+      "index.html",
+      "preload.js",
+      "renderer.js",
+      "server.js",
+      "verify_data.js",
+      "xls.js",
+      "xls.css",
+      "xls.html",
+      "dashboard.html",
+      "dash_script.js",
+      "dash_style.css",
+      "dash_responsive.css",
+      "form_style.css",
+      "liste_prestation.html",
+      "liste_prestation.js",
+      "liste_prestation.css",
+      "images/**/*",
+      "node_modules/**/*",
+      "base_donnee2.db"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "build/MarketTrack1.ico"
+    }
+  }
+}

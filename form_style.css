@@ -1,0 +1,232 @@
+/* style.css */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+    line-height: 1.6;
+  }
+  
+  /* Header Styles */
+  
+  header {
+    height: 70px;
+    display: flex;
+    padding: 0.5rem;
+    background-color: #444;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+  }
+
+.logo img {
+    height: 50px; /* Adjust height based on your needs */
+    width: 80px;
+    border-radius: 10%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    border: 3px solid white; /* White border around the image */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the image */
+  }
+
+  
+  /* header img {
+    height: 50px;
+    margin-right: 1rem;
+  } */
+  
+  /* Navigation Styles */
+  
+   nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+
+
+  .nav_btn {
+    font-size: 20px; /* Adjust the font size */
+    font-weight: 400;
+    color: white; /* White text color */
+    letter-spacing: 1px; /* Slight spacing between letters */
+    background: linear-gradient(135deg, #626262, #464646 ); /* Gradient background */
+    padding: 5px 15px; /* Spacing around  */
+    border-radius: 50px; /* Rounded ajouter container */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .nav_btn:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0px 8px 15px rgba(0.5, 0, 0, 0.5); /* Larger shadow on hover */
+  }
+
+  
+ .searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchbar input {
+  width: 250px;
+  height: 42px;
+  border-radius: 50px 0 0 50px;
+  background-color: white;
+  padding: 0 20px;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  color: rgb(31, 31, 31);
+}
+ .searchbtn {
+  width: 50px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 5px 50px 50px 5px;
+  background-color: #828282;
+  cursor: pointer;
+}
+
+.searchbtn img{
+  width: 33px;
+  height: 33px;
+  margin: 10px;
+  object-fit: cover;
+}
+
+.notification-btn {
+  width: 36px;
+  height: 36px;
+  background-color: transparent; /* ou une autre couleur */
+  border: none;
+  cursor: pointer;
+  position: relative;
+  align-items: center;
+  padding: 5px;
+}
+
+.notification-btn img {
+  width: 36px; /* Ajustez la taille selon vos besoins */
+  height: 36px;
+}
+
+
+
+  /* nav form {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav input {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    width: 100%;
+  }
+  
+  nav button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 0.5rem;
+  }  */
+
+  
+  /* Main Content Styles */
+  
+  main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Form Styles */
+  
+  form {
+    width: 100%; 
+    max-width: 800px;
+    margin:  auto;
+    padding: 1rem;
+    background-color: #444;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group input, .form-group button {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+  }
+
+  message-div {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .btn {
+    background-color: #4CAF50;
+    color:  wheat;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Prestations Styles */
+  
+  .prestations {
+    width: 100% ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .prestation {
+    height: auto;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #444;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .prestation input {
+    width: calc(100% - 20px);
+    margin: 0.5rem 10px;
+  }  
+
+
+.footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  font-size: 14px;
+  color: #888;
+}

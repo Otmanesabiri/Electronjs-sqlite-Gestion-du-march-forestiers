@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Création du Marché</title>
+  <link rel="stylesheet" href="form_style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+          <img src="images\ANDEF-logo.png" alt="Logo">
+    </div>
+    <nav class="nav">
+      <a href="dashboard.html"><button  class="nav_btn" title="page principale">Principale</button></a>
+      <a href="#"><button  class="nav_btn">Documents</button></a>
+  
+      <div class="searchbar">
+        <input type="text" 
+               placeholder="Search">
+        <div class="searchbtn">
+          <img src="images/icon_recherche.png"
+                class="icn_srchicn" 
+                alt="search-icon">
+        </div>
+      </div>
+      <button class="notification-btn">
+        <img src="images/notification.png" alt="Notification">
+      </button> 
+    </nav> 
+  </header>
+<main>
+    <h1>Création du Marché</h1>
+    <form id="marketForm">
+      <div class="form-container">
+        <!-- Partie Gauche -->
+        <div class="form-left">
+          <div class="form-group">
+            <label for="numeroMarché" title="Entrez le numéro du marché">Numéro du marché :</label>
+            <input type="number" id="numeroMarché" placeholder="numéro du marché" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="objetMarché">L'objet du marché:</label>
+            <input type="text" id="objetMarché" placeholder="objet du marché" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="preneurMarché">Preneur du marché:</label>
+            <input type="text" id="preneurMarché" placeholder="preneur du marché" required>
+          </div>
+        
+          <div class="form-group" title="Entrez le nombre de prestation">
+            <label for="nombrePrestation" >Nombre de prestation:</label>
+            <input type="number" id="nombrePrestation" value="1" min="1">
+          </div>
+        </div>
+        <!-- Partie Droite -->
+        <div class="form-right">
+          <div id="prestationsContainer" class="prestations">
+            <!-- Les prestations générées apparaîtront ici -->
+          </div>
+        </div>
+        <button class="btn" type="submit" >Créer le marché</button>
+      </div>
+    </form>
+  
+    <!-- Div pour afficher les messages -->
+    <div id="message-div" ></div>
+  </main>
+
+  <footer class="footer">
+    &copy; 2024 MarketTrack. All Rights Reserved.
+</footer>
+
+  
+  <script src="renderer.js"></script>
+</body>
+</html>

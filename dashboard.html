@@ -1,0 +1,177 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport" 
+          content="width=device-width, 
+                   initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet"  href="dash_style.css">
+    <link rel="stylesheet"  href="dash_responsive.css">
+                
+</head>
+
+<body>
+  
+    <!-- for header part -->
+    <header>
+
+        <div class="logosec">
+            <div class="logo">
+                <img src="images/ANDEF-logo.png" alt="Your Logo" class="logo-img">
+              </div>
+            
+            <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
+                class="icn_menu" 
+                id="menuicn" 
+                alt="menu-icon">
+        </div>
+
+        <div class="searchbar">
+            <input type="text" placeholder="Search" id="searchInput">
+            <div class="searchbtn" onclick="performSearch()">
+              <img src="images/icon_recherche.png" class="icn_srchicn" alt="search-icon">
+            </div>
+        </div>
+
+        <div class="message">
+            <button class="notification-btn">
+                <img src="images/notification.png" alt="Notification">
+            </button> 
+
+            <div class="dp">
+              <img src="images/profile_pic_icon.png"
+                    class="dpicn" 
+                    alt="dp">
+            </div>
+        </div>
+
+    </header>
+
+    <div class="main-container">
+        <div class="navcontainer">
+            <nav class="nav">
+                <div class="nav-upper-options">
+                    <div class="nav-option option1">
+                        <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210182148/Untitled-design-(29).png"
+                            class="nav-img" 
+                            alt="dashboard">
+                        <h3> Dashboard</h3>
+                    </div>
+
+                    <div id="redirectDiv" class="option2 nav-option" title="Voir les détails d'un marché">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png"
+                             class="nav-img" 
+                             alt="Marchés">
+                        <h3>Marchés</h3>
+                    </div>
+
+                    <div id="redirectDiv2" class="nav-option option3" title="fusionner deux fichiers excel">
+                        <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/5.png"
+                            class="nav-img" 
+                            alt="rapport">
+                        <h3>Fusionner</h3>
+                    </div>
+
+
+                    <div class="nav-option logout">
+                        <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png"
+                            class="nav-img" 
+                            alt="logout">
+                        <h3>Déconnexion</h3>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+        <div class="main">
+
+            <div class="searchbar2">
+                <input type="text" 
+                       name="" 
+                       id="" 
+                       placeholder="Search">
+                <div class="searchbtn">
+                  <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
+                        class="icn srchicn" 
+                        alt="search-button">
+                  </div>
+            </div>
+
+            <div class="box-container">
+
+                <div class="box box1">
+                    <div class="text">
+                        <h2 class="topic-heading">600</h2>
+                        <h2 class="topic">Marché Vaidé</h2>
+                    </div>
+
+                    <img src="images/option1.jpeg"  alt="Views">
+                </div>
+                <div class="box box2"  onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2954534.3156164694!2d-17.06030248119335!3d23.83920742302514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc26f33dd940ed2b%3A0x67649655a953d92f!2sOued%20Ed-Dahab-Lagouira!5e1!3m2!1sen!2sma!4v1725624947695!5m2!1sen!2sma', '_blank');">
+                    <div class="text">
+                        <h2 class="topic-heading">Carte</h2>
+                        <h2 class="topic">données géographiques</h2>
+                    </div>
+                    <img src=  "images/google-maps.png" alt="published">
+                </div>
+
+                <div class="box box4">
+                    <div class="text">
+                        <h2 class="topic-heading">70</h2>
+                        <h2 class="topic">Preneur du marché</h2>
+                    </div>
+
+                    <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210185029/13.png" alt="published">
+                </div>
+            </div>
+
+            <div class="report-container">
+                <div class="report-header">
+                    <h1 class="recent-Marchés">Recent Marchés</h1>
+                    <a id="ajouter" href="index.html">
+                        <button class="ajouter" title="ajouter un nouveau marché" >Ajouter +</button>
+                    </a>
+                </div>
+            
+                <div class="report-body">
+                    <table class="report-table">
+                        <thead>
+                            <tr>
+                                <th class="t-op">Marché</th>
+                                <th class="t-op">Prestations</th>
+                                <th class="t-op">Preneur du Marché</th>
+                                <th class="t-op">En cours</th>
+                                <th class="t-op">Action</th>
+                                <!-- <th class="t-op">Actions</th> -->
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+    </div>  
+
+    <footer class="footer">
+        &copy; 2024 MarketTrack. All Rights Reserved.
+    </footer>
+
+    
+
+  <script src="dash_script.js"></script>
+ </body>
+</html>

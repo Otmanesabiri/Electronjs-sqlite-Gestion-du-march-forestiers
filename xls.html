@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusionner les fichiers XLSX</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="xls.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+              <img src="images\ANDEF-logo.png" alt="Logo">
+        </div>
+        <nav class="nav">
+          <a href="dashboard.html"><button  class="nav_btn" title="page principale">Principale</button></a>
+          <a href="#"><button  class="nav_btn">Documents</button></a>
+      
+          <div class="searchbar">
+            <input type="text" 
+                   placeholder="Search">
+            <div class="searchbtn">
+              <img src="images/icon_recherche.png"
+                    class="icn_srchicn" 
+                    alt="search-icon">
+            </div>
+          </div>
+         <a><button class="notification-btn"><img src="images/notification.png" alt="Notification">
+          </button> </a>
+            
+        </nav> 
+      </header>
+  <main>    
+  <div class="container">
+    <h1>Fusionner deux fichiers Excel</h1>
+    
+    <input type="file" id="file1" accept=".xlsx, .xls">
+    <input type="file" id="file2" accept=".xlsx, .xls">
+    <button id="mergeButton">Fusionner et télécharger</button>
+
+    <div class="preview-container">
+        <div class="file-preview">
+            <h2>Aperçu du fichier 1</h2>
+            <table id="excelTable1">
+                <thead></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div class="file-preview">
+            <h2>Aperçu du fichier 2</h2>
+            <table id="excelTable2">
+                <thead></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</main>
+
+<footer class="footer">
+    &copy; 2024 Your MarketTrack. All Rights Reserved.
+</footer>
+
+  <script src="xls.js"></script>
+</body>
+</html>
